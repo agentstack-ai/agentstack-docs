@@ -54,6 +54,13 @@
       "pages": [
         "cli-reference/cli"
       ]
+    },
+    {
+      "group": "Tools",
+      "pages": [
+        "tools/core",
+        "tools/community"
+      ]
     },{
       "group": "Contributing",
       "pages": [
