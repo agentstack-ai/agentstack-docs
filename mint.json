@@ -26,6 +26,10 @@
       "name": "Community",
       "icon": "discord",
       "url": "https://discord.gg/JdWkh9tgTQ"
+    }, {
+      "name": "CrewAI Docs",
+      "icon": "ship",
+      "url": "https://docs.crewai.com/introduction"
     }
   ],
   "navigation": [
@@ -33,24 +37,28 @@
       "group": "Get Started",
       "pages": [
         "introduction",
+        "installation",
         "quickstart"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Basics",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/generating-agents",
+        "essentials/generating-tasks",
+        "essentials/agentops"
       ]
     },
     {
       "group": "CLI Reference",
       "pages": [
-        "cli-reference/introduction"
+        "cli-reference/cli"
+      ]
+    },{
+      "group": "Contributing",
+      "pages": [
+        "contributing/how-to-contribute",
+        "contributing/adding-tools"
       ]
     }
   ],
