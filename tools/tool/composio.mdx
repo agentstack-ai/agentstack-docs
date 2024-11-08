@@ -18,9 +18,9 @@ agentstack tools add composio
 The following example demonstrates how to initialize the tool and execute a github action:
 
 ```python Code
-from crewai_tools import ComposioTool
+from composio_crewai import ComposioToolSet, App
 
-composio_tools = [ComposioTool.from_action(action=Action.GITHUB_ACTIVITY_STAR_REPO_FOR_AUTHENTICATED_USER)]
+composio_tools = ComposioToolSet().get_tools(apps=[App.GITHUB])
 ```
 
 <Note>Its important that `composio_tools` is a list, even if only one element</Note>
@@ -28,16 +28,15 @@ composio_tools = [ComposioTool.from_action(action=Action.GITHUB_ACTIVITY_STAR_RE
 If you don't know what action you want to use, use `from_app` and `tags` filter to get relevant actions
 
 ```python Code
-from crewai_tools import ComposioTool
-from composio import App
+from composio_crewai import ComposioToolSet, App
 
-composio_tools = ComposioTool.from_app(App.GITHUB, tags=["important"])
+composio_tools = ComposioToolSet().from_app(App.GITHUB, tags=["important"])
 ```
 
 or use `use_case` to search relevant actions
 
 ```python Code
-composio_tools = ComposioTool.from_app(App.GITHUB, use_case="Star a github repository")
+composio_tools = ComposioToolSet().from_app(App.GITHUB, use_case="Star a github repository")
 ```
 
 * More detailed list of tools can be found [here](https://app.composio.dev)
