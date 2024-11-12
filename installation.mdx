@@ -11,14 +11,15 @@ Use your favorite package manager
 ```bash PIP
 pip install agentstack
 ```
-
-```bash conda
-conda install -c conda-forge agentstack
+```bash brew
+brew tap agentstack-ai/tap
+brew install agentstack
 ```
+</CodeGroup>
 
-```bash uv
-uv add agentstack
-```
+<Note>
+    Conda is not supported at this time. AgentStack uses Poetry in your project which [does not play well with Conda](https://github.com/AgentOps-AI/AgentStack/issues/40).
+</Note>
 
 </CodeGroup>
 
